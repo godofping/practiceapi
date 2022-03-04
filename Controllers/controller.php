@@ -20,6 +20,11 @@ Class Controller
                 exit();
             break;
 
+            case ($page === "login"):
+                require "Views/login.php";
+                exit();
+            break;
+
             case ($page === "students"):
                 echo json_encode($this->Student->fetchAll());
             break;
